@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4a6cf7',
+                        secondary: '#6c757d',
+                        dark: '#212529',
+                        light: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">EL-AQeeeL👌</h1>
+            <nav>
+                <ul class="flex flex-wrap md:flex-nowrap">
+                    <li class="mx-3"><a href="#home" class="font-semibold hover:text-primary transition-colors">Home</a></li>
+                    <li class="mx-3"><a href="#projects" class="font-semibold hover:text-primary transition-colors">Projects</a></li>
+                    <li class="mx-3"><a href="#skills" class="font-semibold hover:text-primary transition-colors">Skills</a></li>
+                    <li class="mx-3"><a href="#about" class="font-semibold hover:text-primary transition-colors">About</a></li>
+                    <li class="mx-3"><a href="#contact" class="font-semibold hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-10 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-4xl md:text-4xl font-bold mb-2 leading-tight">
+                    Hi, I'm Abubakar Faruq Umar
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-secondary mb-4">A Website Developer</h2>
+                <p class="text-lg mb-8">I create beautiful & functional websites.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-6 py-3 bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transform hover:-translate-y-1 transition-all text-center">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border-2 border-primary text-primary rounded-md font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center">
+                <img src="/first website/images/WhatsApp Image 2025-04-07 at 14.56.25_a579a279.jpg" alt="John Doe" class="rounded-full shadow-lg max-w-xs md:max-w-sm mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-primary after:bottom-[-10px] after:left-1/2 after:transform after:-translate-x-1/2">
+                My Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <div class="overflow-hidden">
+                        <img src="/first website/images/landingpage.png" alt="Project 1" class="w-full transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Landing Page</h3>
+                        <div class="flex flex-wrap mb-4">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">HTML</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">CSS</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="px-4 py-2 bg-primary text-white rounded text-sm font-semibold">View Project</a>
+                            <a href="#" class="px-4 py-2 border border-primary text-primary rounded text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <div class="overflow-hidden">
+                        <img src="/first website/images/portfolio.png" alt="Project 2" class="w-full transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+                        <div class="flex flex-wrap mb-4">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">HTML</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">CSS</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="px-4 py-2 bg-primary text-white rounded text-sm font-semibold">View Project</a>
+                            <a href="#" class="px-4 py-2 border border-primary text-primary rounded text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-primary after:bottom-[-10px] after:left-1/2 after:transform after:-translate-x-1/2">
+                My Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-center text-primary">Frontend</h3>
+                    <ul>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-html5 text-primary mr-3"></i> HTML5
+                        </li>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-css3-alt text-primary mr-3"></i> CSS3
+                        </li>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-js text-primary mr-3"></i> JavaScript
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-center text-primary">Tools</h3>
+                    <ul>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-git-alt text-primary mr-3"></i> Git
+                        </li>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-github text-primary mr-3"></i> GitHub
+                        </li>
+                        <li class="py-3 border-b border-gray-100 flex items-center">
+                            <i class="fab fa-figma text-primary mr-3"></i> Figma
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-primary after:bottom-[-10px] after:left-0 md:text-left text-center md:after:left-0 md:after:transform-none after:left-1/2 after:transform after:-translate-x-1/2">
+                        About Me
+                    </h2>
+                    <p class="text-lg mb-4">Hello! I'm Faruq Umar Abubakar, native of kwara a passionate web developer with a keen eye for design and a love for creating intuitive, dynamic user experiences.</p>
+                    <p class="text-lg mb-4">With over 2 years of experience in the field, I've worked on a variety of projects. I'm constantly learning and exploring new technologies to stay at the forefront of web development.</p>
+                    <p class="text-lg mb-8">When I'm not coding, you can find me playing football, reading, watching movies or listening to music.</p>
+                    <div class="mt-8 md:text-left text-center">
+                        <a href="#" class="px-6 py-3 bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transition-colors">Download Resume</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="/first website/images/faruq.png.jpg" alt="About John Doe" class="rounded-xl shadow-lg mx-auto">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-primary after:bottom-[-10px] after:left-0 md:text-left text-center md:after:left-0 md:after:transform-none after:left-1/2 after:transform after:-translate-x-1/2">
+                        Education
+                    </h2>
+        <ul>
+            <li class="py-3 border-b border-gray-100 flex items-center">BA.Ed Educational Management. UNILAG. 2025</li>
+            <li class="py-3 border-b border-gray-100 flex items-center">Morkaz Institue, Agege. ARABIC LANGUAGE. 2020</li>
+            <li class="py-3 border-b border-gray-100 flex items-center">Estate grammar school, Oshodi. SSCE. 2013</li>
+            <li class="py-3 border-b border-gray-100 flex items-center">IOTBTECH FELLOWSHIP Web Dev. 2025</li>
+            <li class="py-3 border-b border-gray-100 flex items-center">SideHustle.com Frontend Web Development. 2023</li>
+            <li class="py-3 border-b border-gray-100 flex items-center">ALX Africa. Software Engineer. 2022</li>
+        </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-primary after:bottom-[-10px] after:left-1/2 after:transform after:-translate-x-1/2">
+                Get In Touch
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-primary">Contact Information</h3>
+                    <p class="flex items-center mb-4">
+                        <i class="fas fa-envelope text-primary mr-3"></i> elaqeeel@gmail.com
+                    </p>
+                    <p class="flex items-center mb-4">
+                        <i class="fas fa-phone text-primary mr-3"></i> +234 701 105 2117 
+                    </p>
+                    <p class="flex items-center mb-6">
+                        <i class="fas fa-map-marker-alt text-primary mr-3"></i> Lagos, Nigeria
+                    </p>
+                    <div class="flex gap-4 mt-8">
+                        <a href="https://github.com/elaqeel" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://web.facebook.com/umarfaaruq.abubakar" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com/PharuqUmar1" taget="_blank" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/elaqeeel99/?igsh=azAzMzNiYnlsaDFk#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-primary">Send Me a Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block font-semibold mb-1">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block font-semibold mb-1">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block font-semibold mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block font-semibold mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 EL-AQeeeL. All Rights Reserved.</p>
+            <div class="mt-4 md:mt-0">
+                <a href="#" class="text-white hover:text-primary transition-colors mx-3">Privacy Policy</a>
+                <a href="#" class="text-white hover:text-primary transition-colors mx-3">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
